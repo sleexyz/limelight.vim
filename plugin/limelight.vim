@@ -55,7 +55,7 @@ function! s:limelight()
     return
   endif
 
-  let paragraph = [searchpos('^$', 'bnW')[0], searchpos('^$', 'nW')[0]]
+  let paragraph = [searchpos('^#$', 'bnW')[0], searchpos('^#$', 'nW')[0]]
   if paragraph ==# w:limelight_prev[2 : 3]
     return
   endif
