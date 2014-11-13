@@ -55,7 +55,11 @@ function! s:limelight()
     return
   endif
 
-  let paragraph = [searchpos('^#', 'bnW')[0], searchpos('^#', 'nW')[0]]
+  if &ft == 'markdown'
+    let paragraph = [searchpos('^#', 'bnW')[0], searchpos('^#', 'nW')[0] - 1]
+  else
+    let paragraph = [searchpos('^$', 'bnW')[0], searchpos('^$', 'nW')[0]]
+  endif
   if paragraph ==# w:limelight_prev[2 : 3]
     return
   endif

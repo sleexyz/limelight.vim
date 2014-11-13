@@ -8,6 +8,18 @@ Hyperfocus-writing in Vim.
 Best served with [Goyo.vim](https://github.com/junegunn/goyo.vim).
 Works on 256-color terminal or on GVim.
 
+## note
+Forked from [junegunn/limelight.vim](https://github.com/junegunn/limelight.vim), to recognize `^#` as the delimiter for blocks for Markdown files.
+
+In other words, for markdown files, blocking by sections defined by octothorpe-defined headers.
+
+Doesn't support `=====` or `----` defined headers yet.
+
+Hmm... maybe blocking specifications should be abstracted...
+
+*To be continued...*
+
+
 Usage
 -----
 
